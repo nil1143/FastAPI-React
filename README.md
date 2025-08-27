@@ -1,3 +1,13 @@
+# Choose-Your-Own-Adventure
+
+## Setup Notes
+
+### Fixed: uv Command Not Recognized on Windows
+- **Issue**: `uv` was installed via `pip` but not accessible in the terminal due to the Scripts directory not being in the system PATH.
+- **Resolution**: Added the Scripts path (`C:\Users\...\local-packages\Python311\Scripts`) to the system PATH via Windows Environment Variables. Alternatively, use `python -m uv` as a workaround.
+- **Impact**: Ensures `uv run`, `uv add`, etc., work directly without full paths.
+
+
 ## Installation
 
 1. Ensure `uv` is installed: `pip install uv`
